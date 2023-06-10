@@ -1,0 +1,65 @@
+body {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 40vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+header * {
+  color: white;
+  text-decoration: none;
+}
+header > div {
+  margin: 0 auto;
+  align-items: center;
+  height: 5rem;
+  width: 50%;
+  background: linear-gradient(20deg, rgb(153, 153, 153), rgb(61, 61, 61));
+}
+header nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  width: 85%;
+}
+
+header nav a {
+  font-weight: 600;
+}
+header nav > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+header nav > div:first-child img {
+  height: 50px;
+  width: 50px;
+}
+header nav > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 18%;
+}
+header nav > div:last-child button {
+  background-color: black;
+  border: white 2px solid;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 0em 0.6em;
+}
+header nav > div:last-child button:hover {
+  background-color: rgb(161, 161, 161);
+}/*# sourceMappingURL=CNN.css.map */
