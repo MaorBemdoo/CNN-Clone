@@ -1,0 +1,29 @@
+main #div1{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 85%;
+    & p:nth-child(even){
+        opacity: .5;
+        font-weight: 700;
+    }
+    & p:nth-child(odd){
+        cursor: pointer;
+        &:hover{
+            border-bottom: 1px black solid;
+        }
+    }
+}
+
+main #news1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    & article{
+        margin: 0 auto;
+        &:nth-child(3){
+            grid-column-start: 2;
+            grid-row-start: 2;
+        }
+    }
+}

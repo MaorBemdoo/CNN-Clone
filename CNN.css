@@ -1,3 +1,33 @@
+main #div1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 85%;
+}
+main #div1 p:nth-child(even) {
+  opacity: 0.5;
+  font-weight: 700;
+}
+main #div1 p:nth-child(odd) {
+  cursor: pointer;
+}
+main #div1 p:nth-child(odd):hover {
+  border-bottom: 1px black solid;
+}
+
+main #news1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+main #news1 article {
+  margin: 0 auto;
+}
+main #news1 article:nth-child(3) {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
 body {
   border: 0;
   margin: 0;
@@ -41,7 +71,7 @@ header nav > div:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  gap: 1rem;
 }
 header nav > div:first-child img {
   height: 50px;
@@ -51,7 +81,7 @@ header nav > div:last-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 18%;
+  gap: 1rem;
 }
 header nav > div:last-child button {
   background-color: black;
