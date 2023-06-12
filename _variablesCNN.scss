@@ -1,0 +1,9 @@
+
+@mixin filter($tag){
+    @if $tag == a{
+        color: silver;
+    }
+    @else if $tag == img{
+        filter: grayscale(50%) contrast(50%) brightness(100%); 
+    }
+}

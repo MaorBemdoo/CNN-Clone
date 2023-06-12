@@ -31,12 +31,23 @@ main #news1 article:nth-child(3) {
   grid-row-start: 2;
 }
 
+main #news1 article:first-child > a:first-child:hover {
+  color: silver;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 a:hover {
   border-bottom: 1px black solid;
+}
+
+img {
+  cursor: pointer;
+}
+img:hover {
+  filter: grayscale(50%) contrast(50%) brightness(100%);
 }
 
 body {

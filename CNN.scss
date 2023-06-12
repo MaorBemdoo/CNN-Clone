@@ -1,3 +1,4 @@
+@import './variablesCNN';
 @import './mainCNN';
 
 a{
@@ -5,6 +6,13 @@ a{
     color: inherit;
     &:hover{
         border-bottom: 1px black solid;
+    }
+}
+
+img{
+    cursor: pointer;
+    &:hover{
+        @include filter(img)
     }
 }
 

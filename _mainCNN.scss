@@ -30,3 +30,9 @@ main #news1{
         }
     }
 }
+
+main #news1 article:first-child{
+    & > a:first-child:hover{
+        @include filter(a)
+    }
+}
