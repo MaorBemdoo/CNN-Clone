@@ -23,9 +23,20 @@ main #news1 {
 main #news1 article {
   margin: 0 auto;
 }
+main #news1 article:first-child, main #news1 article:last-child {
+  grid-row: span 2;
+}
 main #news1 article:nth-child(3) {
   grid-column-start: 2;
   grid-row-start: 2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  border-bottom: 1px black solid;
 }
 
 body {
