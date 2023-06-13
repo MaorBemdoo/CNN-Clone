@@ -1,9 +1,19 @@
+main{
+    margin: 0 auto;
+    width: 85%;
+    & img{
+        cursor: pointer;
+        &:hover{
+            @include filter(img)
+        }
+    }
+}
+
 main #div1{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding: 2rem 0;
-    width: 85%;
     & p:nth-child(even){
         opacity: .5;
         font-weight: 700;
@@ -32,7 +42,11 @@ main #news1{
 }
 
 main #news1 article:first-child{
-    & > a:first-child:hover{
+    & > a:first-child{
+        text-align: center;
+        font-size: 2.5rem;
+        &:hover{
         @include filter(a)
+        }
     }
 }

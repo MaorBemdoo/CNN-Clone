@@ -9,24 +9,19 @@ a{
     }
 }
 
-img{
-    cursor: pointer;
-    &:hover{
-        @include filter(img)
-    }
-}
-
 body{
     border: 0;
     margin: 0;
     box-sizing: border-box;
+    height: 300vh;
+    position: relative;
 }
 
 header{
-    position: relative;
     background-color: black;
     height: 40vh;
     width: 100%;
+    // position: relative;
     display: grid;
     place-items: center;
     & *{
@@ -34,35 +29,40 @@ header{
         text-decoration: none;
     }
     & > div{
-        margin: 0 auto;
-        align-items: center;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
         height: 5rem;
         width: 50%;
         background: linear-gradient(20deg, rgb(153, 153, 153), rgb(61, 61, 61));
     }
-    & nav{
-        position: absolute;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        bottom: 0;
-        width: 100%;
-        background-color: black;
-        width: 85%;
-
-    }
 }
 
-header nav{
-    & a{
+nav{
+    padding: 0 7.5%;
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+
+nav{
+    & *{
+        color: white;
         font-weight: 600;
+        text-decoration: none;
     }
     & > div:first-child{
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
-        // width: 60%;
+        width: 60%;
         & img{
             height: 50px;
             width: 50px;

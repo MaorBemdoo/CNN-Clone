@@ -2,8 +2,19 @@
 @mixin filter($tag){
     @if $tag == a{
         color: silver;
+        border-bottom-color: silver;
     }
     @else if $tag == img{
         filter: grayscale(50%) contrast(50%) brightness(100%); 
     }
+}
+
+.bigImg{
+    height: 300px;
+    width: 100%;
+}
+
+.smallImg{
+    height: 25px;
+    width: 50px;
 }

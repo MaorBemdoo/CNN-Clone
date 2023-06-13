@@ -1,9 +1,29 @@
+.bigImg {
+  height: 300px;
+  width: 100%;
+}
+
+.smallImg {
+  height: 25px;
+  width: 50px;
+}
+
+main {
+  margin: 0 auto;
+  width: 85%;
+}
+main img {
+  cursor: pointer;
+}
+main img:hover {
+  filter: grayscale(50%) contrast(50%) brightness(100%);
+}
+
 main #div1 {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding: 2rem 0;
-  width: 85%;
 }
 main #div1 p:nth-child(even) {
   opacity: 0.5;
@@ -31,8 +51,13 @@ main #news1 article:nth-child(3) {
   grid-row-start: 2;
 }
 
+main #news1 article:first-child > a:first-child {
+  text-align: center;
+  font-size: 2.5rem;
+}
 main #news1 article:first-child > a:first-child:hover {
   color: silver;
+  border-bottom-color: silver;
 }
 
 a {
@@ -43,21 +68,15 @@ a:hover {
   border-bottom: 1px black solid;
 }
 
-img {
-  cursor: pointer;
-}
-img:hover {
-  filter: grayscale(50%) contrast(50%) brightness(100%);
-}
-
 body {
   border: 0;
   margin: 0;
   box-sizing: border-box;
+  height: 300vh;
+  position: relative;
 }
 
 header {
-  position: relative;
   background-color: black;
   height: 40vh;
   width: 100%;
@@ -69,49 +88,52 @@ header * {
   text-decoration: none;
 }
 header > div {
-  margin: 0 auto;
-  align-items: center;
   height: 5rem;
   width: 50%;
   background: linear-gradient(20deg, rgb(153, 153, 153), rgb(61, 61, 61));
 }
-header nav {
-  position: absolute;
+
+nav {
+  padding: 0 7.5%;
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  bottom: 0;
-  width: 100%;
   background-color: black;
-  width: 85%;
+  width: 100%;
 }
 
-header nav a {
+nav * {
+  color: white;
   font-weight: 600;
+  text-decoration: none;
 }
-header nav > div:first-child {
+nav > div:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  width: 60%;
 }
-header nav > div:first-child img {
+nav > div:first-child img {
   height: 50px;
   width: 50px;
 }
-header nav > div:last-child {
+nav > div:last-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
 }
-header nav > div:last-child button {
+nav > div:last-child button {
   background-color: black;
   border: white 2px solid;
   border-radius: 6px;
   font-weight: 600;
   padding: 0em 0.6em;
 }
-header nav > div:last-child button:hover {
+nav > div:last-child button:hover {
   background-color: rgb(161, 161, 161);
 }/*# sourceMappingURL=CNN.css.map */
