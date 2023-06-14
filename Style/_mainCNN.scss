@@ -29,6 +29,7 @@ main #div1{
 main #news1{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
     & article{
         margin: 0 auto;
         &:first-child{
@@ -44,9 +45,24 @@ main #news1{
 main #news1 article:first-child{
     & > a:first-child{
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 3rem;
         &:hover{
         @include filter(a)
         }
+    }
+    & > a:nth-child(3){
+        font-size: 1.2rem;
+    }
+    & ul{
+        font-size: 1.05rem;
+    }
+}
+
+main #news1 article:nth-child(2){
+    & > a:first-child{
+        font-size: 1.2rem;
+    }
+    & ul{
+        font-size: 1.05rem;
     }
 }
