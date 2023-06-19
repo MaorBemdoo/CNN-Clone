@@ -18,3 +18,17 @@
     height: 200px;
     width: 100%;
 }
+
+.SArticle{
+    & a:nth-child(2){
+        font-size: 1.2rem;
+    }
+    & ul {
+        list-style-type: none;
+        padding: 0;
+        & li{
+        border-top: 1px solid black;
+        padding-top: .7rem;
+        }
+    }   
+}

@@ -8,6 +8,18 @@
   width: 100%;
 }
 
+.SArticle a:nth-child(2) {
+  font-size: 1.2rem;
+}
+.SArticle ul {
+  list-style-type: none;
+  padding: 0;
+}
+.SArticle ul li {
+  border-top: 1px solid black;
+  padding-top: 0.7rem;
+}
+
 main {
   margin: 0 auto;
   width: 85%;
@@ -25,14 +37,14 @@ main #div1 {
   margin: 0 auto;
   padding: 2rem 0;
 }
-main #div1 p:nth-child(even) {
+main #div1 span:nth-child(even) {
   opacity: 0.5;
   font-weight: 700;
 }
-main #div1 p:nth-child(odd) {
+main #div1 span:nth-child(odd) {
   cursor: pointer;
 }
-main #div1 p:nth-child(odd):hover {
+main #div1 span:nth-child(odd):hover {
   border-bottom: 1px black solid;
 }
 
@@ -67,11 +79,14 @@ main #news1 article:first-child ul {
   font-size: 1.05rem;
 }
 
-main #news1 article:nth-child(2) > a:first-child {
+main #news1 article:nth-child(2) > div:first-child > a {
   font-size: 1.2rem;
 }
-main #news1 article:nth-child(2) ul {
+main #news1 article:nth-child(2) > div:first-child ul {
   font-size: 1.05rem;
+}
+main #news1 article:nth-child(2) > div:last-child a {
+  font-size: 1.2rem;
 }
 
 a {
@@ -85,8 +100,8 @@ a:hover {
 body {
   border: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  position: relative;
 }
 
 header {
@@ -109,6 +124,7 @@ header > div {
 nav {
   padding: 0 7.5%;
   position: sticky;
+  z-index: 100;
   top: 0;
   margin: 0 auto;
   display: flex;

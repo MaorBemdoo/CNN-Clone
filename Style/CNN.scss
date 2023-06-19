@@ -1,6 +1,10 @@
 @import './variablesCNN';
 @import './mainCNN';
 
+// html{
+//     color-scheme: dark;
+// }
+
 a{
     text-decoration: none;
     color: inherit;
@@ -12,8 +16,8 @@ a{
 body{
     border: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    position: relative;
 }
 
 header{
@@ -41,6 +45,7 @@ header{
 nav{
     padding: 0 7.5%;
     position: sticky;
+    z-index: 100;
     top: 0;
     margin: 0 auto;
     display: flex;

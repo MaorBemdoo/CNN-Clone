@@ -14,11 +14,11 @@ main #div1{
     justify-content: space-between;
     margin: 0 auto;
     padding: 2rem 0;
-    & p:nth-child(even){
+    & span:nth-child(even){
         opacity: .5;
         font-weight: 700;
     }
-    & p:nth-child(odd){
+    & span:nth-child(odd){
         cursor: pointer;
         &:hover{
             border-bottom: 1px black solid;
@@ -47,7 +47,7 @@ main #news1 article:first-child{
         text-align: center;
         font-size: 3rem;
         &:hover{
-        @include filter(a)
+            @include filter(a)
         }
     }
     & > a:nth-child(3){
@@ -59,10 +59,23 @@ main #news1 article:first-child{
 }
 
 main #news1 article:nth-child(2){
-    & > a:first-child{
-        font-size: 1.2rem;
+    & > div:first-child{
+        & > a{
+            font-size: 1.2rem;
+        }
+        & ul{
+            font-size: 1.05rem;
+        }
     }
-    & ul{
-        font-size: 1.05rem;
+    & > div:last-child{
+        & a{
+            font-size: 1.2rem;
+        }
     }
 }
+
+// main #news1 article:nth-child(3){
+//     & a:first-child{
+//         font-size: 1.2rem;
+//     }
+// }
