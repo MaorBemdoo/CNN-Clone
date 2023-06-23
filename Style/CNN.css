@@ -1,10 +1,10 @@
 .bigImg {
-  height: 400px;
+  height: 350px;
   width: 100%;
 }
 
 .smallImg {
-  height: 250px;
+  height: 200px;
   width: 100%;
 }
 
@@ -79,12 +79,18 @@ main #news1 article:first-child > a:nth-child(3) {
 main #news1 article:first-child ul {
   font-size: 1.05rem;
 }
+main #news1 article:first-child ul li {
+  padding-top: 1rem;
+}
 
 main #news1 article:nth-child(2) > div:first-child > a {
   font-size: 1.2rem;
 }
 main #news1 article:nth-child(2) > div:first-child ul {
   font-size: 1.05rem;
+}
+main #news1 article:nth-child(2) > div:first-child ul li {
+  padding-top: 1rem;
 }
 main #news1 article:nth-child(2) > div:last-child a {
   font-size: 1.2rem;
