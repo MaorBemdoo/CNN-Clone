@@ -1,10 +1,10 @@
 .bigImg {
-  height: 350px;
+  height: 400px;
   width: 100%;
 }
 
 .smallImg {
-  height: 200px;
+  height: 250px;
   width: 100%;
 }
 
@@ -14,15 +14,17 @@
 .SArticle ul {
   list-style-type: none;
   padding: 0;
+  margin-top: 1em;
 }
 .SArticle ul li {
-  border-top: 1px solid black;
-  padding-top: 0.7rem;
+  border-top: 1px solid silver;
+  padding: 0.7rem 0;
 }
 
 main {
   margin: 0 auto;
   width: 85%;
+  background-color: white;
 }
 main img {
   cursor: pointer;
@@ -65,7 +67,6 @@ main #news1 article:nth-child(2) {
 }
 
 main #news1 article:first-child > a:first-child {
-  text-align: center;
   font-size: 3rem;
 }
 main #news1 article:first-child > a:first-child:hover {
@@ -132,6 +133,7 @@ nav {
   align-items: center;
   background-color: black;
   width: 100%;
+  border: 0;
 }
 
 nav * {

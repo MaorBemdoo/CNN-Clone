@@ -1,6 +1,7 @@
 main{
     margin: 0 auto;
     width: 85%;
+    background-color: white;
     & img{
         cursor: pointer;
         &:hover{
@@ -44,7 +45,6 @@ main #news1{
 
 main #news1 article:first-child{
     & > a:first-child{
-        text-align: center;
         font-size: 3rem;
         &:hover{
             @include filter(a)

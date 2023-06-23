@@ -10,12 +10,12 @@
 }
 
 .bigImg{
-    height: 350px;
+    height: 400px;
     width: 100%;
 }
 
 .smallImg{
-    height: 200px;
+    height: 250px;
     width: 100%;
 }
 
@@ -26,9 +26,10 @@
     & ul {
         list-style-type: none;
         padding: 0;
+        margin-top: 1em;
         & li{
-        border-top: 1px solid black;
-        padding-top: .7rem;
+        border-top: 1px solid silver;
+        padding: .7rem 0;
         }
-    }   
+    }
 }
