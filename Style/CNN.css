@@ -27,6 +27,10 @@
   padding: 1rem 0;
   display: flex;
 }
+.SArticle ul li a:hover {
+  text-decoration: underline;
+  border: 0;
+}
 
 main {
   margin: 0 auto;
