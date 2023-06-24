@@ -20,15 +20,13 @@
 }
 
 .vSmallImg{
-    display: float;
-    float: left;
     padding-right: 1rem;
     height: 60px;
     width: 100px;
 }
 
 .SArticle{
-    & a:nth-child(2){
+    & > a:nth-child(2){
         font-size: 1.2rem;
     }
     & ul {
@@ -37,7 +35,9 @@
         margin-top: 1em;
         & li{
         border-top: 1px solid silver;
-        padding: .7rem 0;
+        padding: 1rem 0;
+        display: flex;
+        // margin-bottom: 1.5rem;
         }
     }
 }
