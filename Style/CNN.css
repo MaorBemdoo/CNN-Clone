@@ -96,6 +96,30 @@ main #news1 article:nth-child(2) > div:last-child a {
   font-size: 1.2rem;
 }
 
+main #news2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+main #news2 article {
+  position: relative;
+  margin: 0 auto;
+  border-top: 1px solid silver;
+  padding-top: 5rem;
+}
+main #news2 article::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3.5px;
+  width: 20px;
+  background-color: rgb(204, 12, 21);
+}
+main #news2 article:nth-child(2) {
+  grid-column: span 2;
+}
+
 a {
   text-decoration: none;
   color: inherit;
