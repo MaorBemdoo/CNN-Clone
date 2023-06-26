@@ -141,11 +141,49 @@ main #news2 article::after {
   position: absolute;
   top: 0;
   left: 0;
-  height: 3.5px;
+  height: 2px;
   width: 15px;
   background-color: rgb(204, 12, 21);
 }
 main #news2 article:nth-child(2) {
+  grid-column: span 2;
+}
+
+main #news3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+main #news3 article {
+  position: relative;
+  margin: 0 auto;
+  border-top: 1px solid silver;
+  padding-top: 5rem;
+}
+main #news3 article:first-child::before {
+  content: "MORE TOP STORIES";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main #news3 article:nth-child(3):before {
+  content: "SPOTLIGHT";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main #news3 article:not(:nth-child(2)):after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 15px;
+  background-color: rgb(204, 12, 21);
+}
+main #news3 article:nth-child(2) {
+  border-top: none;
+  padding-top: 0;
   grid-column: span 2;
 }
 
