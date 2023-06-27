@@ -2,7 +2,7 @@ main{
     margin: 0 auto;
     width: 85%;
     background-color: white;
-    & img{
+    & img, & video{
         cursor: pointer;
         &:hover{
             @include filter(img)
