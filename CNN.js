@@ -1,8 +1,8 @@
 
 $("document").ready(function(){
     document.addEventListener("keydown", (e) => {
-        e.preventDefault()
         if(e.ctrlKey && e.key.toLowerCase() == "b"){
+            e.preventDefault()
             alert("Best CNN clone ever🚀")
         }
     })
