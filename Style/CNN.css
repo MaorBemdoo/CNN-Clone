@@ -187,6 +187,14 @@ main #news3 article:nth-child(2) {
   grid-column: span 2;
 }
 
+::-moz-selection {
+  background-color: silver;
+}
+
+::selection {
+  background-color: silver;
+}
+
 a {
   text-decoration: none;
   color: inherit;

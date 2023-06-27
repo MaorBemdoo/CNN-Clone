@@ -5,6 +5,10 @@
 //     color-scheme: dark;
 // }
 
+::selection{
+    background-color: silver;
+}
+
 a{
     text-decoration: none;
     color: inherit;
