@@ -130,7 +130,7 @@ main #news2 article:nth-child(2)::before {
   top: 0;
   left: 0;
 }
-main #news2 article:nth-child(3):before {
+main #news2 article:nth-child(3)::before {
   content: "SPOTLIGHT";
   position: absolute;
   top: 0;
@@ -166,13 +166,13 @@ main #news3 article:first-child::before {
   top: 0;
   left: 0;
 }
-main #news3 article:nth-child(3):before {
+main #news3 article:nth-child(3)::before {
   content: "TAKE A BREAK";
   position: absolute;
   top: 0;
   left: 0;
 }
-main #news3 article:not(:nth-child(2)):after {
+main #news3 article:not(:nth-child(2))::after {
   content: "";
   position: absolute;
   top: 0;
@@ -185,6 +185,51 @@ main #news3 article:nth-child(2) {
   border-top: none;
   padding-top: 0;
   grid-column: span 2;
+}
+
+main #news4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+main #news4 > h1 {
+  grid-column: span 3;
+}
+main #news4 article {
+  position: relative;
+  border-top: 1px solid silver;
+  padding-top: 2rem;
+}
+main #news4 article:nth-child(2)::before {
+  content: "CNN BUSINESS";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main #news4 article:nth-child(3)::before {
+  content: "CNN TRAVEL";
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main #news4 article:not(:nth-child(4))::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 15px;
+  background-color: rgb(204, 12, 21);
+}
+main #news4 article:nth-child(4) {
+  border-top: none;
+}
+main #news4 > div {
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(20deg, rgb(235, 235, 235), rgb(160, 160, 160));
 }
 
 ::-moz-selection {
@@ -224,7 +269,7 @@ header * {
 header > div {
   height: 5rem;
   width: 50%;
-  background: linear-gradient(20deg, rgb(153, 153, 153), rgb(61, 61, 61));
+  background: linear-gradient(20deg, rgb(235, 235, 235), rgb(160, 160, 160));
 }
 
 nav {
