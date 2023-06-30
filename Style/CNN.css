@@ -241,7 +241,7 @@ main #news4 article:nth-child(3) > div:hover::after {
   opacity: 1;
   transition: opacity 500ms ease-out;
 }
-main #news4 article:nth-child(2):after {
+main #news4 article:nth-child(2)::after {
   content: "";
   position: absolute;
   top: 0;
@@ -258,6 +258,46 @@ main #news4 > div {
   height: 300px;
   width: 300px;
   background: linear-gradient(20deg, rgb(235, 235, 235), rgb(160, 160, 160));
+}
+
+main #news5 article {
+  position: relative;
+  border-top: 1px solid silver;
+  padding-top: 2rem;
+}
+main #news5 article:first-child {
+  padding-top: 0;
+}
+main #news5 article:first-child > div {
+  position: relative;
+  cursor: pointer;
+  height: 2rem;
+}
+main #news5 article:first-child > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 15px;
+  background-color: rgb(204, 12, 21);
+}
+main #news5 article:first-child > div::after {
+  content: "";
+  font-size: 1.5rem;
+  position: absolute;
+  padding: 0;
+  top: -0.5rem;
+  opacity: 0;
+}
+main #news5 article:first-child > div:hover::before {
+  width: 100%;
+  transition: width 500ms ease-out;
+}
+main #news5 article:first-child > div:hover::after {
+  content: "→";
+  opacity: 1;
+  transition: opacity 500ms ease-out;
 }
 
 ::-moz-selection {
