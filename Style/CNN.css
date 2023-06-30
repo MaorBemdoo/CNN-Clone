@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .bigImg {
   height: 350px;
   width: 100%;
@@ -206,14 +207,41 @@ main #news4 article:nth-child(2)::before {
   top: 0;
   left: 0;
 }
-main #news4 article:nth-child(3)::before {
-  content: "CNN TRAVEL";
+main #news4 article:nth-child(3) {
+  padding-top: 0;
+}
+main #news4 article:nth-child(3) > div {
+  position: relative;
   cursor: pointer;
+  height: 2rem;
+}
+main #news4 article:nth-child(3) > div::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
+  height: 2px;
+  width: 15px;
+  background-color: rgb(204, 12, 21);
 }
-main #news4 article:not(:nth-child(4))::after {
+main #news4 article:nth-child(3) > div::after {
+  content: "";
+  font-size: 1.5rem;
+  position: absolute;
+  padding: 0;
+  top: -0.5rem;
+  opacity: 0;
+}
+main #news4 article:nth-child(3) > div:hover::before {
+  width: 100%;
+  transition: width 500ms ease-out;
+}
+main #news4 article:nth-child(3) > div:hover::after {
+  content: "→";
+  opacity: 1;
+  transition: opacity 500ms ease-out;
+}
+main #news4 article:nth-child(2):after {
   content: "";
   position: absolute;
   top: 0;

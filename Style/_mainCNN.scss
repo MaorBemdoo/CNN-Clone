@@ -177,14 +177,43 @@ main #news4{
             top: 0;
             left: 0;
         }
-        &:nth-child(3)::before{
-            content: 'CNN TRAVEL';
+        &:nth-child(3) {
+            padding-top: 0;
+            & > div{
+            position: relative;
             cursor: pointer;
-            position: absolute;
-            top: 0;
-            left: 0;
+            height: 2rem;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 2px;
+                    width: 15px;
+                    background-color: rgb(204, 12, 21);
+                }
+                &::after{
+                    content: '';
+                    font-size: 1.5rem;
+                    position: absolute;
+                    padding: 0;
+                    top: -.5rem;
+                    opacity: 0;
+                }
+                &:hover{
+                    &::before{
+                        width: 100%;
+                        transition: width 500ms ease-out;
+                    }
+                    &::after{
+                        content: '→';
+                        opacity: 1;
+                        transition: opacity 500ms ease-out;
+                    }
+                }
+            }
         }
-        &:not(:nth-child(4))::after{
+        &:nth-child(2):after{
             content: '';
             position: absolute;
             top: 0;
