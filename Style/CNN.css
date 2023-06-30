@@ -260,6 +260,11 @@ main #news4 > div {
   background: linear-gradient(20deg, rgb(235, 235, 235), rgb(160, 160, 160));
 }
 
+main #news5 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
 main #news5 article {
   position: relative;
   border-top: 1px solid silver;
@@ -298,6 +303,27 @@ main #news5 article:first-child > div:hover::after {
   content: "→";
   opacity: 1;
   transition: opacity 500ms ease-out;
+}
+main #news5 article:not(:first-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 15px;
+  background-color: rgb(204, 12, 21);
+}
+main #news5 article:nth-child(2)::before {
+  content: "STYLE";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main #news5 article:nth-child(3)::before {
+  content: "OPINION";
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 ::-moz-selection {

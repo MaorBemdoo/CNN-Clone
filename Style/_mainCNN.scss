@@ -235,6 +235,9 @@ main #news4{
 }
 
 main #news5{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
     & article{
         position: relative;
         border-top: 1px solid silver;
@@ -274,6 +277,28 @@ main #news5{
                     }
                 }
             }
+        }
+    
+        &:not(:first-child)::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 2px;
+            width: 15px;
+            background-color: rgb(204, 12, 21);
+        }
+        &:nth-child(2)::before{
+            content: 'STYLE';
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &:nth-child(3)::before{
+            content: 'OPINION';
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     }
 }
