@@ -65,7 +65,7 @@ main #div1 span:nth-child(odd):hover {
 main #news1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
 }
 main #news1 article {
   margin: 0 auto;
@@ -111,7 +111,7 @@ main #news1 article:nth-child(2) > div:last-child a {
 main #news2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
 }
 main #news2 article {
   position: relative;
@@ -153,7 +153,7 @@ main #news2 article:nth-child(2) {
 main #news3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
 }
 main #news3 article {
   position: relative;
@@ -191,7 +191,7 @@ main #news3 article:nth-child(2) {
 main #news4 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
 }
 main #news4 > h1 {
   grid-column: span 3;
@@ -263,7 +263,7 @@ main #news4 > div {
 main #news5 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
 }
 main #news5 article {
   position: relative;

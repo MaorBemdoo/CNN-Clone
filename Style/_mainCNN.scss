@@ -30,7 +30,7 @@ main #div1{
 main #news1{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
     & article{
         margin: 0 auto;
         &:first-child{
@@ -83,7 +83,7 @@ main #news1 article:nth-child(2){
 main #news2{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
     & article{
         position: relative;
         margin: 0 auto;
@@ -125,7 +125,7 @@ main #news2{
 main #news3{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
     & article{
         position: relative;
         margin: 0 auto;
@@ -163,7 +163,7 @@ main #news3{
 main #news4{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
     & > h1{
         grid-column: span 3;
     }
@@ -237,7 +237,7 @@ main #news4{
 main #news5{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
     & article{
         position: relative;
         border-top: 1px solid silver;
