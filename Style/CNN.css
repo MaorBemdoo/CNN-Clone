@@ -326,6 +326,45 @@ main #news5 article:nth-child(3)::before {
   left: 0;
 }
 
+main #news6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+main #news6 article {
+  position: relative;
+  margin: 0 auto;
+  border-top: 1px solid silver;
+  padding-top: 2rem;
+}
+main #news6 article:first-child::before {
+  content: "POLITICS";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main #news6 article:nth-child(2)::before {
+  content: "SCIENCE AND HEALTH";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main #news6 article:nth-child(3)::before {
+  content: "TECH";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main #news6 article::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 15px;
+  background-color: rgb(204, 12, 21);
+}
+
 ::-moz-selection {
   background-color: silver;
 }
