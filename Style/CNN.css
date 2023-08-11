@@ -365,6 +365,13 @@ main #news6 article::after {
   background-color: rgb(204, 12, 21);
 }
 
+main #news7 > h1 {
+  font-size: 2.2rem;
+}
+main #news7 > h1:nth-child(1) {
+  margin-bottom: 5rem;
+}
+
 ::-moz-selection {
   background-color: silver;
 }

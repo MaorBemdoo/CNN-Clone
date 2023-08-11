@@ -1,342 +1,356 @@
-main{
-    margin: 0 auto;
-    width: 85%;
-    background-color: white;
-    & img, & video{
-        cursor: pointer;
-        &:hover{
-            @include filter(img)
-        }
-    }
+main {
+	margin: 0 auto;
+	width: 85%;
+	background-color: white;
+	& img,
+	& video {
+		cursor: pointer;
+		&:hover {
+			@include filter(img);
+		}
+	}
 }
 
-main #div1{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 2rem 0;
-    & span:nth-child(even){
-        opacity: .5;
-        font-weight: 700;
-    }
-    & span:nth-child(odd){
-        cursor: pointer;
-        &:hover{
-            border-bottom: 1px black solid;
-        }
-    }
+main #div1 {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 2rem 0;
+	& span:nth-child(even) {
+		opacity: 0.5;
+		font-weight: 700;
+	}
+	& span:nth-child(odd) {
+		cursor: pointer;
+		&:hover {
+			border-bottom: 1px black solid;
+		}
+	}
 }
 
-main #news1{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    & article{
-        margin: 0 auto;
-        &:first-child{
-            grid-column: span 2;
-        }
-        &:nth-child(2){
-            display: grid;
-            grid-template-rows: repeat(2, 1fr);
-        }
-    }
+main #news1 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.5rem;
+	& article {
+		margin: 0 auto;
+		&:first-child {
+			grid-column: span 2;
+		}
+		&:nth-child(2) {
+			display: grid;
+			grid-template-rows: repeat(2, 1fr);
+		}
+	}
 }
 
-main #news1 article:first-child{
-    & > a:first-child{
-        font-size: 3rem;
-        &:hover{
-            @include filter(a)
-        }
-    }
-    & > a:nth-child(3){
-        font-size: 1.2rem;
-    }
-    & ul{
-        font-size: 1.05rem;
-        & li{
-            padding-top: 1rem;
-        }
-    }
+main #news1 article:first-child {
+	& > a:first-child {
+		font-size: 3rem;
+		&:hover {
+			@include filter(a);
+		}
+	}
+	& > a:nth-child(3) {
+		font-size: 1.2rem;
+	}
+	& ul {
+		font-size: 1.05rem;
+		& li {
+			padding-top: 1rem;
+		}
+	}
 }
 
-main #news1 article:nth-child(2){
-    & > div:first-child{
-        & > a{
-            font-size: 1.2rem;
-        }
-        & ul{
-            font-size: 1.05rem;
-            & li{
-                padding-top: 1rem;
-            }
-        }
-    }
-    & > div:last-child{
-        & a{
-            font-size: 1.2rem;
-        }
-    }
+main #news1 article:nth-child(2) {
+	& > div:first-child {
+		& > a {
+			font-size: 1.2rem;
+		}
+		& ul {
+			font-size: 1.05rem;
+			& li {
+				padding-top: 1rem;
+			}
+		}
+	}
+	& > div:last-child {
+		& a {
+			font-size: 1.2rem;
+		}
+	}
 }
 
-main #news2{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    & article{
-        position: relative;
-        margin: 0 auto;
-        border-top: 1px solid silver;
-        padding-top: 2rem;
-        &:first-child::before{
-            content: 'MORE TOP STORIES';
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        &:nth-child(2)::before{
-            content: 'FEATURED';
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        &:nth-child(3)::before{
-            content: 'SPOTLIGHT';
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        &::after{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 2px;
-            width: 15px;
-            background-color: rgb(204, 12, 21);
-        }
-        &:nth-child(2){
-            grid-column: span 2;
-        }
-    }
+main #news2 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.5rem;
+	& article {
+		position: relative;
+		margin: 0 auto;
+		border-top: 1px solid silver;
+		padding-top: 2rem;
+		&:first-child::before {
+			content: "MORE TOP STORIES";
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&:nth-child(2)::before {
+			content: "FEATURED";
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&:nth-child(3)::before {
+			content: "SPOTLIGHT";
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 2px;
+			width: 15px;
+			background-color: rgb(204, 12, 21);
+		}
+		&:nth-child(2) {
+			grid-column: span 2;
+		}
+	}
 }
 
-main #news3{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    & article{
-        position: relative;
-        margin: 0 auto;
-        border-top: 1px solid silver;
-        padding-top: 2rem;
-        &:first-child::before{
-            content: 'TAKE A CLOSER LOOK';
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        &:nth-child(3)::before{
-            content: 'TAKE A BREAK';
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        &:not(:nth-child(2))::after{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 2px;
-            width: 15px;
-            background-color: rgb(204, 12, 21);
-        }
-        &:nth-child(2){
-            border-top: none;
-            padding-top: 0;
-            grid-column: span 2;
-        }
-    }
+main #news3 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.5rem;
+	& article {
+		position: relative;
+		margin: 0 auto;
+		border-top: 1px solid silver;
+		padding-top: 2rem;
+		&:first-child::before {
+			content: "TAKE A CLOSER LOOK";
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&:nth-child(3)::before {
+			content: "TAKE A BREAK";
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&:not(:nth-child(2))::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 2px;
+			width: 15px;
+			background-color: rgb(204, 12, 21);
+		}
+		&:nth-child(2) {
+			border-top: none;
+			padding-top: 0;
+			grid-column: span 2;
+		}
+	}
 }
 
-main #news4{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    & > h1{
-        grid-column: span 3;
-    }
-    & article{
-        position: relative;
-        border-top: 1px solid silver;
-        padding-top: 2rem;
-        &:nth-child(2)::before{
-            content: 'CNN BUSINESS';
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        &:nth-child(3) {
-            padding-top: 0;
-            & > div{
-            position: relative;
-            cursor: pointer;
-            height: 2rem;
-                &::before{
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: 2px;
-                    width: 15px;
-                    background-color: rgb(204, 12, 21);
-                }
-                &::after{
-                    content: '';
-                    font-size: 1.5rem;
-                    position: absolute;
-                    padding: 0;
-                    top: -.5rem;
-                    opacity: 0;
-                }
-                &:hover{
-                    &::before{
-                        width: 100%;
-                        transition: width 500ms ease-out;
-                    }
-                    &::after{
-                        content: '→';
-                        opacity: 1;
-                        transition: opacity 500ms ease-out;
-                    }
-                }
-            }
-        }
-        &:nth-child(2)::after{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 2px;
-            width: 15px;
-            background-color: rgb(204, 12, 21);
-        }
-        &:nth-child(4){
-            border-top: none;
-        }
-    }
-    & > div{
-        margin: 0 auto;
-        height: 300px;
-        width: 300px;
-        background: linear-gradient(20deg, rgb(235, 235, 235), rgb(160, 160, 160));
-    }
+main #news4 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+	& > h1 {
+		grid-column: span 3;
+	}
+	& article {
+		position: relative;
+		border-top: 1px solid silver;
+		padding-top: 2rem;
+		&:nth-child(2)::before {
+			content: "CNN BUSINESS";
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&:nth-child(3) {
+			padding-top: 0;
+			& > div {
+				position: relative;
+				cursor: pointer;
+				height: 2rem;
+				&::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 2px;
+					width: 15px;
+					background-color: rgb(204, 12, 21);
+				}
+				&::after {
+					content: "";
+					font-size: 1.5rem;
+					position: absolute;
+					padding: 0;
+					top: -0.5rem;
+					opacity: 0;
+				}
+				&:hover {
+					&::before {
+						width: 100%;
+						transition: width 500ms ease-out;
+					}
+					&::after {
+						content: "→";
+						opacity: 1;
+						transition: opacity 500ms ease-out;
+					}
+				}
+			}
+		}
+		&:nth-child(2)::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 2px;
+			width: 15px;
+			background-color: rgb(204, 12, 21);
+		}
+		&:nth-child(4) {
+			border-top: none;
+		}
+	}
+	& > div {
+		margin: 0 auto;
+		height: 300px;
+		width: 300px;
+		background: linear-gradient(
+			20deg,
+			rgb(235, 235, 235),
+			rgb(160, 160, 160)
+		);
+	}
 }
 
-main #news5{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    & article{
-        position: relative;
-        border-top: 1px solid silver;
-        padding-top: 2rem;
-        &:first-child {
-            padding-top: 0;
-            & > div{
-            position: relative;
-            cursor: pointer;
-            height: 2rem;
-                &::before{
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: 2px;
-                    width: 15px;
-                    background-color: rgb(204, 12, 21);
-                }
-                &::after{
-                    content: '';
-                    font-size: 1.5rem;
-                    position: absolute;
-                    padding: 0;
-                    top: -.5rem;
-                    opacity: 0;
-                }
-                &:hover{
-                    &::before{
-                        width: 100%;
-                        transition: width 500ms ease-out;
-                    }
-                    &::after{
-                        content: '→';
-                        opacity: 1;
-                        transition: opacity 500ms ease-out;
-                    }
-                }
-            }
-        }
-    
-        &:not(:first-child)::after{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 2px;
-            width: 15px;
-            background-color: rgb(204, 12, 21);
-        }
-        &:nth-child(2)::before{
-            content: 'STYLE';
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        &:nth-child(3)::before{
-            content: 'OPINION';
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    }
+main #news5 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+	& article {
+		position: relative;
+		border-top: 1px solid silver;
+		padding-top: 2rem;
+		&:first-child {
+			padding-top: 0;
+			& > div {
+				position: relative;
+				cursor: pointer;
+				height: 2rem;
+				&::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 2px;
+					width: 15px;
+					background-color: rgb(204, 12, 21);
+				}
+				&::after {
+					content: "";
+					font-size: 1.5rem;
+					position: absolute;
+					padding: 0;
+					top: -0.5rem;
+					opacity: 0;
+				}
+				&:hover {
+					&::before {
+						width: 100%;
+						transition: width 500ms ease-out;
+					}
+					&::after {
+						content: "→";
+						opacity: 1;
+						transition: opacity 500ms ease-out;
+					}
+				}
+			}
+		}
+
+		&:not(:first-child)::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 2px;
+			width: 15px;
+			background-color: rgb(204, 12, 21);
+		}
+		&:nth-child(2)::before {
+			content: "STYLE";
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&:nth-child(3)::before {
+			content: "OPINION";
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
 }
 
-main #news6{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    & article{
-        position: relative;
-        border-top: 1px solid silver;
-        padding-top: 2rem;
-        &:first-child::before{
-            content: 'POLITICS';
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        &:nth-child(2)::before{
-            content: 'SCIENCE AND HEALTH';
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        &:nth-child(3)::before{
-            content: 'TECH';
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        &::after{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 2px;
-            width: 15px;
-            background-color: rgb(204, 12, 21);
-        }
-    }
+main #news6 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+	& article {
+		position: relative;
+		border-top: 1px solid silver;
+		padding-top: 2rem;
+		&:first-child::before {
+			content: "POLITICS";
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&:nth-child(2)::before {
+			content: "SCIENCE AND HEALTH";
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&:nth-child(3)::before {
+			content: "TECH";
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 2px;
+			width: 15px;
+			background-color: rgb(204, 12, 21);
+		}
+	}
+}
+
+main #news7 {
+	& > h1 {
+		font-size: 2.2rem;
+		&:nth-child(1) {
+			margin-bottom: 5rem;
+		}
+	}
 }
