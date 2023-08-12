@@ -352,6 +352,9 @@ main #news7 {
 		&:nth-child(1) {
 			margin-bottom: 5rem;
 		}
+		&:last-child {
+			margin-top: 3rem;
+		}
 	}
 	& > div {
 		display: flex;
@@ -361,7 +364,7 @@ main #news7 {
 		& ul {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
+			gap: 2rem;
 			& li {
 				border: none;
 				flex-direction: column;

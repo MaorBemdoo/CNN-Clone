@@ -371,6 +371,9 @@ main #news7 > h1 {
 main #news7 > h1:nth-child(1) {
   margin-bottom: 5rem;
 }
+main #news7 > h1:last-child {
+  margin-top: 3rem;
+}
 main #news7 > div {
   display: flex;
 }
