@@ -482,4 +482,11 @@ nav > div:last-child button {
 }
 nav > div:last-child button:hover {
   background-color: rgb(161, 161, 161);
+}
+
+footer {
+  background-color: black;
+}
+footer > * {
+  color: white;
 }/*# sourceMappingURL=CNN.css.map */

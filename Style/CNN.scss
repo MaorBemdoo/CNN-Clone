@@ -101,3 +101,10 @@ nav {
 		}
 	}
 }
+
+footer{
+	& > *{
+		color: white;
+	}
+	background-color: black;
+}
