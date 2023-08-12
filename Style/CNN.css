@@ -371,6 +371,28 @@ main #news7 > h1 {
 main #news7 > h1:nth-child(1) {
   margin-bottom: 5rem;
 }
+main #news7 > div {
+  display: flex;
+}
+main #news7 > div article {
+  margin: 0;
+}
+main #news7 > div article ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+main #news7 > div article ul li {
+  border: none;
+  flex-direction: column;
+}
+main #news7 > div > div {
+  flex-basis: 80%;
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(20deg, rgb(235, 235, 235), rgb(160, 160, 160));
+}
 
 ::-moz-selection {
   background-color: silver;

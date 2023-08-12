@@ -353,4 +353,30 @@ main #news7 {
 			margin-bottom: 5rem;
 		}
 	}
+	& > div {
+		display: flex;
+	}
+	& > div article {
+		margin: 0;
+		& ul {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+			& li {
+				border: none;
+				flex-direction: column;
+			}
+		}
+	}
+	& > div > div {
+		flex-basis: 80%;
+		margin: 0 auto;
+		height: 300px;
+		width: 300px;
+		background: linear-gradient(
+			20deg,
+			rgb(235, 235, 235),
+			rgb(160, 160, 160)
+		);
+	}
 }
