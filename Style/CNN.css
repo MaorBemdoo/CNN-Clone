@@ -43,7 +43,7 @@ main img, main video {
   cursor: pointer;
 }
 main img:hover, main video:hover {
-  filter: grayscale(50%) contrast(50%) brightness(100%);
+  opacity: 0.7;
 }
 
 main #div1 {

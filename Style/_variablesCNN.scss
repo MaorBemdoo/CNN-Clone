@@ -3,7 +3,8 @@
 		color: silver;
 		border-bottom-color: silver;
 	} @else if $tag == img {
-		filter: grayscale(50%) contrast(50%) brightness(100%);
+		// filter: grayscale(50%) contrast(50%) brightness(100%);
+		opacity: 0.7;
 	}
 }
 
