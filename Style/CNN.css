@@ -478,7 +478,8 @@ nav > div:last-child button {
   border: white 2px solid;
   border-radius: 6px;
   font-weight: 600;
-  padding: 0em 0.6em;
+  padding: 0.5em;
+  cursor: pointer;
 }
 nav > div:last-child button:hover {
   background-color: rgb(161, 161, 161);
