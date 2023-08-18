@@ -109,3 +109,22 @@ footer {
 	background-color: black;
 	padding: 5em;
 }
+
+footer article {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer article ul {
+	& li {
+		list-style: none;
+		padding: 1rem 0;
+		&:not(:first-child) {
+			border-top: 1px solid grey;
+		}
+	}
+	& a:hover {
+		text-decoration: underline;
+		border: 0;
+	}
+}

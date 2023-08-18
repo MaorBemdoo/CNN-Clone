@@ -490,4 +490,21 @@ footer {
 }
 footer > * {
   color: white;
+}
+
+footer article {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer article ul li {
+  list-style: none;
+  padding: 1rem 0;
+}
+footer article ul li:not(:first-child) {
+  border-top: 1px solid grey;
+}
+footer article ul a:hover {
+  text-decoration: underline;
+  border: 0;
 }/*# sourceMappingURL=CNN.css.map */
