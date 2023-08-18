@@ -106,19 +106,21 @@ footer {
 	& > * {
 		color: white;
 	}
-	& > h1{
+	& > h1 {
 		padding-left: 5rem;
+	}
+	& > article {
+		padding: 5rem;
 	}
 	background-color: black;
 }
 
-footer article {
+footer article:nth-child(2) {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	padding: 5rem;
 }
 
-footer article ul {
+footer article:nth-child(2) ul {
 	& li {
 		list-style: none;
 		padding: 1rem 0;
@@ -132,14 +134,10 @@ footer article ul {
 	}
 }
 
-footer article div:last-child{
+footer article:nth-child(2) div:last-child {
 	grid-column: span 2;
 	width: 728px;
-    height: 110px;
+	height: 110px;
 	margin: auto;
-	background: linear-gradient(
-		20deg,
-		rgb(235, 235, 235),
-		rgb(160, 160, 160)
-	);
+	background: linear-gradient(20deg, rgb(235, 235, 235), rgb(160, 160, 160));
 }

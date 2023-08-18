@@ -493,26 +493,28 @@ footer > * {
 footer > h1 {
   padding-left: 5rem;
 }
-
-footer article {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+footer > article {
   padding: 5rem;
 }
 
-footer article ul li {
+footer article:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer article:nth-child(2) ul li {
   list-style: none;
   padding: 1rem 0;
 }
-footer article ul li:not(:first-child) {
+footer article:nth-child(2) ul li:not(:first-child) {
   border-top: 1px solid grey;
 }
-footer article ul a:hover {
+footer article:nth-child(2) ul a:hover {
   text-decoration: underline;
   border: 0;
 }
 
-footer article div:last-child {
+footer article:nth-child(2) div:last-child {
   grid-column: span 2;
   width: 728px;
   height: 110px;
