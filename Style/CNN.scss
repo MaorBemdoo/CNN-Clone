@@ -106,13 +106,16 @@ footer {
 	& > * {
 		color: white;
 	}
+	& > h1{
+		padding-left: 5rem;
+	}
 	background-color: black;
-	padding: 5em;
 }
 
 footer article {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	padding: 5rem;
 }
 
 footer article ul {

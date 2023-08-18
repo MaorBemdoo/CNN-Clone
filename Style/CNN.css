@@ -486,15 +486,18 @@ nav > div:last-child button:hover {
 
 footer {
   background-color: black;
-  padding: 5em;
 }
 footer > * {
   color: white;
+}
+footer > h1 {
+  padding-left: 5rem;
 }
 
 footer article {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding: 5rem;
 }
 
 footer article ul li {
