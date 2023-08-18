@@ -493,8 +493,8 @@ footer > * {
 }
 
 footer article {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 footer article ul li {
@@ -507,4 +507,12 @@ footer article ul li:not(:first-child) {
 footer article ul a:hover {
   text-decoration: underline;
   border: 0;
+}
+
+footer article div:last-child {
+  grid-column: span 2;
+  width: 728px;
+  height: 110px;
+  margin: auto;
+  background: linear-gradient(20deg, rgb(235, 235, 235), rgb(160, 160, 160));
 }/*# sourceMappingURL=CNN.css.map */

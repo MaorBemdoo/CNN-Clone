@@ -111,8 +111,8 @@ footer {
 }
 
 footer article {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 footer article ul {
@@ -127,4 +127,16 @@ footer article ul {
 		text-decoration: underline;
 		border: 0;
 	}
+}
+
+footer article div:last-child{
+	grid-column: span 2;
+	width: 728px;
+    height: 110px;
+	margin: auto;
+	background: linear-gradient(
+		20deg,
+		rgb(235, 235, 235),
+		rgb(160, 160, 160)
+	);
 }
