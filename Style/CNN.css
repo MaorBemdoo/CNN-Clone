@@ -48,7 +48,11 @@ main img:hover, main video:hover {
 
 main #div1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  text-align: center;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 2rem 0;
 }
