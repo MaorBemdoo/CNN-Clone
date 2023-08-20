@@ -451,6 +451,9 @@ nav {
   border: 0;
 }
 
+nav {
+  box-shadow: 0px 1px 0px 0px silver;
+}
 nav * {
   color: white;
   font-weight: 600;
