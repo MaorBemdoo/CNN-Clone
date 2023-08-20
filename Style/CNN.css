@@ -526,6 +526,8 @@ footer article:nth-child(2) div:last-child {
 footer article:nth-child(3) {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  padding-top: 3.5em;
+  border-top: 0.3px solid grey;
 }
 
 footer article:nth-child(3) form {
@@ -551,4 +553,24 @@ footer article:nth-child(3) form button {
   border: 0;
   font-weight: 800;
   cursor: pointer;
+}
+
+footer article:nth-child(3) div {
+  display: flex;
+  flex-direction: column;
+}
+footer article:nth-child(3) div a {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+footer article:nth-child(3) div a:hover {
+  text-decoration: underline;
+}
+footer article:nth-child(3) div h3 {
+  cursor: pointer;
+}
+footer article:nth-child(3) div h3:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=CNN.css.map */
