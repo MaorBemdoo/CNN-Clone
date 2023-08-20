@@ -64,10 +64,10 @@ nav {
 	align-items: center;
 	background-color: black;
 	border: 0;
+	box-shadow: 0px 1px 0px 0px silver;
 }
 
 nav {
-	box-shadow: 0px 1px 0px 0px silver;
 	& * {
 		color: white;
 		font-weight: 600;
