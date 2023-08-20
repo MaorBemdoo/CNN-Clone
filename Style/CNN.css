@@ -449,11 +449,9 @@ nav {
   align-items: center;
   background-color: black;
   border: 0;
-}
-
-nav {
   box-shadow: 0px 1px 0px 0px silver;
 }
+
 nav * {
   color: white;
   font-weight: 600;
@@ -576,4 +574,25 @@ footer article:nth-child(3) div h3 {
 }
 footer article:nth-child(3) div h3:hover {
   text-decoration: underline;
+}
+
+footer article:nth-child(4) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer article:nth-child(4) div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer article:nth-child(4) div:first-child img {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+footer article:nth-child(4) div:first-child a {
+  font-weight: 700;
+  font-size: 1.3rem;
 }/*# sourceMappingURL=CNN.css.map */
