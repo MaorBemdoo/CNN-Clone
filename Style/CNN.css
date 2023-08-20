@@ -521,4 +521,34 @@ footer article:nth-child(2) div:last-child {
   height: 110px;
   margin: auto;
   background: linear-gradient(20deg, rgb(235, 235, 235), rgb(160, 160, 160));
+}
+
+footer article:nth-child(3) {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+footer article:nth-child(3) form {
+  position: relative;
+  grid-column: span 7;
+}
+footer article:nth-child(3) form input {
+  height: 38px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid silver;
+  font-size: 16px;
+}
+footer article:nth-child(3) form input:focus {
+  outline: 0;
+}
+footer article:nth-child(3) form button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: 0;
+  font-weight: 800;
+  cursor: pointer;
 }/*# sourceMappingURL=CNN.css.map */
