@@ -635,4 +635,21 @@ footer article:nth-child(4) div:last-child button {
 }
 footer article:nth-child(4) div:last-child button:hover {
   background-color: rgb(161, 161, 161);
+}
+
+footer article:last-child {
+  padding-top: 2em;
+  border-top: 0.3px solid grey;
+}
+footer article:last-child > * {
+  font-size: 0.8rem;
+}
+footer article:last-child > a:hover {
+  text-decoration: underline;
+}
+footer article:last-child > a:not(:last-child) {
+  padding-right: 1rem;
+}
+footer article:last-child > p {
+  padding-top: 2rem;
 }/*# sourceMappingURL=CNN.css.map */

@@ -255,3 +255,20 @@ footer article:nth-child(4) div:last-child {
 		}
 	}
 }
+
+footer article:last-child{
+	padding-top: 2em;
+	border-top: 0.3px solid grey;
+	& > *{
+		font-size: 0.8rem;
+	}
+	&> a:hover{
+		text-decoration: underline;
+	}
+	& > a:not(:last-child){
+		padding-right: 1rem;
+	}
+	& > p{
+		padding-top: 2rem;
+	}
+}
