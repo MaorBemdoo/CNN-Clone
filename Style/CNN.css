@@ -457,6 +457,9 @@ nav * {
   font-weight: 600;
   text-decoration: none;
 }
+nav *:hover {
+  border-bottom: 0;
+}
 nav > div:first-child {
   display: flex;
   justify-content: space-between;
@@ -580,6 +583,8 @@ footer article:nth-child(4) {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 3.5em;
+  border-top: 0.3px solid grey;
 }
 
 footer article:nth-child(4) div:first-child {
@@ -601,4 +606,33 @@ footer article:nth-child(4) div:last-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
+}
+footer article:nth-child(4) div:last-child > *:hover {
+  border-bottom: 0;
+}
+footer article:nth-child(4) div:last-child p:nth-child(3) {
+  color: silver;
+  cursor: pointer;
+}
+footer article:nth-child(4) div:last-child p:nth-child(4) {
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+footer article:nth-child(4) div:last-child i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+footer article:nth-child(4) div:last-child button {
+  color: white;
+  background-color: black;
+  border: white 2px solid;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 0.5em;
+  cursor: pointer;
+}
+footer article:nth-child(4) div:last-child button:hover {
+  background-color: rgb(161, 161, 161);
 }/*# sourceMappingURL=CNN.css.map */

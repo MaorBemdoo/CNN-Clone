@@ -72,6 +72,9 @@ nav {
 		color: white;
 		font-weight: 600;
 		text-decoration: none;
+		&:hover {
+			border-bottom: 0;
+		}
 	}
 	& > div:first-child {
 		display: flex;
@@ -199,6 +202,8 @@ footer article:nth-child(4) {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-top: 3.5em;
+	border-top: 0.3px solid grey;
 }
 
 footer article:nth-child(4) div:first-child {
@@ -220,4 +225,33 @@ footer article:nth-child(4) div:last-child {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 1rem;
+	& > *:hover{
+		border-bottom: 0;
+	}
+	& p:nth-child(3) {
+		color: silver;
+		cursor: pointer;
+	}
+	& p:nth-child(4) {
+		font-size: 0.9rem;
+		font-weight: 600;
+		cursor: pointer;
+	}
+	& i {
+		font-size: 1.5rem;
+		cursor: pointer;
+	}
+	& button {
+		color: white;
+		background-color: black;
+		border: white 2px solid;
+		border-radius: 6px;
+		font-weight: 600;
+		padding: 0.5em;
+		cursor: pointer;
+		&:hover {
+			background-color: rgb(161, 161, 161);
+		}
+	}
 }
