@@ -181,9 +181,9 @@ footer article:nth-child(3) div {
 	flex-direction: column;
 	& a {
 		width: fit-content;
-		font-size: .9rem;
+		font-size: 0.9rem;
 		line-height: 1.5rem;
-		&:hover{
+		&:hover {
 			text-decoration: underline;
 		}
 	}
@@ -195,28 +195,28 @@ footer article:nth-child(3) div {
 	}
 }
 
-footer article:nth-child(4){
+footer article:nth-child(4) {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-footer article:nth-child(4) div:first-child{
+footer article:nth-child(4) div:first-child {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-	& img{
+	& img {
 		cursor: pointer;
 		height: 50px;
 		width: 50px;
 	}
-	& a{
+	& a {
 		font-weight: 600;
 		font-size: 1.3rem;
 	}
 }
 
-footer article:nth-child(4) div:last-child{
+footer article:nth-child(4) div:last-child {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
