@@ -401,10 +401,10 @@ main #news7 > div > div {
   background: linear-gradient(20deg, rgb(235, 235, 235), rgb(160, 160, 160));
 }
 
+@keyframes colorChangeAnim {}
 ::-moz-selection {
   background-color: silver;
 }
-
 ::selection {
   background-color: silver;
 }
