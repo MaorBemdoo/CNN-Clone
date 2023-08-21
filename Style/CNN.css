@@ -80,6 +80,10 @@ main #news1 article {
 main #news1 article:first-child {
   grid-column: span 2;
 }
+main #news1 article:first-child > a:first-child {
+  display: flex;
+  text-align: center;
+}
 main #news1 article:nth-child(2) {
   display: grid;
   grid-template-rows: repeat(2, 1fr);

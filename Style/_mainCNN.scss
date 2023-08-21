@@ -15,7 +15,7 @@ main #div1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: .6rem;
+	gap: 0.6rem;
 	text-align: center;
 	flex-wrap: wrap;
 	margin: 0 auto;
@@ -40,6 +40,10 @@ main #news1 {
 		margin: 0 auto;
 		&:first-child {
 			grid-column: span 2;
+			& > a:first-child {
+				display: flex;
+				text-align: center;
+			}
 		}
 		&:nth-child(2) {
 			display: grid;
