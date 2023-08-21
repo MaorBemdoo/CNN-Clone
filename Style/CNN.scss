@@ -50,6 +50,7 @@ header {
 			rgb(235, 235, 235),
 			rgb(160, 160, 160)
 		);
+		animation: colorChangeAnim 500ms infinite;
 	}
 }
 
@@ -145,6 +146,7 @@ footer article:nth-child(2) div:last-child {
 	height: 110px;
 	margin: auto;
 	background: linear-gradient(20deg, rgb(235, 235, 235), rgb(160, 160, 160));
+	animation: colorChangeAnim 500ms infinite;
 }
 
 footer article:nth-child(3) {

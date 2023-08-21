@@ -240,6 +240,7 @@ main #news4 {
 			rgb(235, 235, 235),
 			rgb(160, 160, 160)
 		);
+		animation: colorChangeAnim 500ms infinite;
 	}
 }
 
@@ -385,5 +386,6 @@ main #news7 {
 			rgb(235, 235, 235),
 			rgb(160, 160, 160)
 		);
+		animation: colorChangeAnim 500ms infinite;
 	}
 }
