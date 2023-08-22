@@ -12,4 +12,7 @@ $("document").ready(function(){
             $("#Hdiv").css("z-index", "-100")
         }
     }
+    window.onresize = (e) => {
+        
+    }
 })

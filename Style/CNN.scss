@@ -76,6 +76,9 @@ nav {
 		&:hover {
 			border-bottom: 0;
 		}
+		&:focus {
+			font-weight: 600;
+		}
 	}
 	& > div:first-child {
 		display: flex;
@@ -83,6 +86,9 @@ nav {
 		align-items: center;
 		gap: 1rem;
 		width: 60%;
+		& p {
+			display: none;
+		}
 		& img {
 			height: 50px;
 			width: 50px;
@@ -228,7 +234,7 @@ footer article:nth-child(4) div:last-child {
 	justify-content: space-between;
 	align-items: center;
 	gap: 1rem;
-	& > *:hover{
+	& > *:hover {
 		border-bottom: 0;
 	}
 	& p:nth-child(3) {
@@ -258,19 +264,19 @@ footer article:nth-child(4) div:last-child {
 	}
 }
 
-footer article:last-child{
+footer article:last-child {
 	padding-top: 2em;
 	border-top: 0.3px solid grey;
-	& > *{
+	& > * {
 		font-size: 0.8rem;
 	}
-	&> a:hover{
+	& > a:hover {
 		text-decoration: underline;
 	}
-	& > a:not(:last-child){
+	& > a:not(:last-child) {
 		padding-right: 1rem;
 	}
-	& > p{
+	& > p {
 		padding-top: 2rem;
 	}
 }

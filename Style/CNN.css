@@ -484,12 +484,18 @@ nav * {
 nav *:hover {
   border-bottom: 0;
 }
+nav *:focus {
+  font-weight: 600;
+}
 nav > div:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
   width: 60%;
+}
+nav > div:first-child p {
+  display: none;
 }
 nav > div:first-child img {
   height: 50px;
