@@ -5,6 +5,7 @@ main {
 	& img,
 	& video {
 		cursor: pointer;
+		background-size: cover;
 		&:hover {
 			@include filter(img);
 		}
@@ -361,28 +362,33 @@ main #news7 {
 		&:nth-child(1) {
 			margin-bottom: 5rem;
 		}
-		&:last-child {
+		&:nth-child(2) {
 			margin-top: 3rem;
 		}
 	}
-	& > div {
+	& article {
 		display: flex;
 	}
-	& > div article {
-		margin: 0;
-		& ul {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: 2rem;
-			& li {
-				border: none;
-				flex-direction: column;
+	& article ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.5rem;
+		& li {
+			display: flex;
+			flex-direction: column;
+			list-style: none;
+			max-width: 250px;
+			& img{
+				height: 150px;
+				width: 100%;
+			}
+			& a:hover{
+				border-bottom: none;
+				text-decoration: underline;
 			}
 		}
 	}
-	& > div > div {
-		flex-basis: 80%;
-		margin: 0 auto;
+	& article div {
 		height: 300px;
 		width: 300px;
 		background: linear-gradient(
