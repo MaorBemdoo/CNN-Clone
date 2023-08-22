@@ -409,6 +409,7 @@ main #news7 article ul li a:hover {
   text-decoration: underline;
 }
 main #news7 article div {
+  margin: 0 auto;
   height: 300px;
   width: 300px;
   background: linear-gradient(20deg, rgb(235, 235, 235), rgb(160, 160, 160));
