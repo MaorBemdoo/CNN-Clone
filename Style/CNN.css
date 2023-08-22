@@ -478,7 +478,7 @@ nav {
 
 nav * {
   color: white;
-  font-weight: 600;
+  font-weight: 300;
   text-decoration: none;
 }
 nav *:hover {
@@ -677,4 +677,17 @@ footer article:last-child > a:not(:last-child) {
 }
 footer article:last-child > p {
   padding-top: 2rem;
+}
+
+@media (max-width: 1250px) {
+  nav,
+  main {
+    padding: 0 2em;
+  }
+  footer > h1 {
+    padding-left: 2em;
+  }
+  footer article {
+    padding: 5em 2em;
+  }
 }/*# sourceMappingURL=CNN.css.map */

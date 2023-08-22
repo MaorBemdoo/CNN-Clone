@@ -71,7 +71,7 @@ nav {
 nav {
 	& * {
 		color: white;
-		font-weight: 600;
+		font-weight: 300;
 		text-decoration: none;
 		&:hover {
 			border-bottom: 0;
@@ -272,5 +272,18 @@ footer article:last-child{
 	}
 	& > p{
 		padding-top: 2rem;
+	}
+}
+
+@media (max-width: 1250px) {
+	nav,
+	main {
+		padding: 0 2em;
+	}
+	footer > h1 {
+		padding-left: 2em;
+	}
+	footer article {
+		padding: 5em 2em;
 	}
 }
