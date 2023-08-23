@@ -44,6 +44,10 @@ main #news1 {
 			& > a:first-child {
 				display: flex;
 				text-align: center;
+				&:hover{
+					text-decoration: underline;
+					border-bottom: none;
+				}
 			}
 		}
 		&:nth-child(2) {
