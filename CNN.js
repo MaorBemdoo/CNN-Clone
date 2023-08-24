@@ -12,13 +12,14 @@ $("document").ready(function(){
             $("#Hdiv").css("z-index", "-100")
         }
     }
+    const navDivFirstChild = document.querySelectorAll("nav div:first-child")
     window.onresize = (e) => {
         console.log(e.target.screen.width);
-        // if (e.target.screen.width){
-
-        // }
-        // while (e.target.screen.width) {
-        //     $("nav").children().first().last().prev().css("display", "none")
-        // }
+        if (e.target.screen.width <= 1153){
+            navDivFirstChild.forEach(child => {
+                child.lastElementChild.style.display = "block"
+                child.lastElementChild.previousElementSibling.style.display = "none"
+            })
+        }
     }
 })

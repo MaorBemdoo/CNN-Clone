@@ -44,7 +44,7 @@ main #news1 {
 			& > a:first-child {
 				display: flex;
 				text-align: center;
-				&:hover{
+				&:hover {
 					text-decoration: underline;
 					border-bottom: none;
 				}
@@ -242,6 +242,7 @@ main #news4 {
 	}
 	& > div {
 		margin: 0 auto;
+		transform: translateX(3em);
 		height: 300px;
 		width: 300px;
 		background: linear-gradient(
@@ -382,11 +383,11 @@ main #news7 {
 			flex-direction: column;
 			list-style: none;
 			max-width: 250px;
-			& img{
+			& img {
 				height: 150px;
 				width: 100%;
 			}
-			& a:hover{
+			& a:hover {
 				border-bottom: none;
 				text-decoration: underline;
 			}
@@ -394,6 +395,7 @@ main #news7 {
 	}
 	& article div {
 		margin: 0 auto;
+		transform: translateX(3em);
 		height: 300px;
 		width: 300px;
 		background: linear-gradient(
