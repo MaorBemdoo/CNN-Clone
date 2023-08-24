@@ -296,4 +296,10 @@ footer article:last-child {
 	// main #news7 div{
 	// 	transform: translateX(1em);
 	// }
+	main #news7 article ul li{
+		max-width: 200px;
+		& img{
+			height: 100px;
+		}
+	}
 }

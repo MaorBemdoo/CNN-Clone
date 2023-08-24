@@ -702,4 +702,10 @@ footer article:last-child > p {
   footer article {
     padding: 5em 2em;
   }
+  main #news7 article ul li {
+    max-width: 200px;
+  }
+  main #news7 article ul li img {
+    height: 100px;
+  }
 }/*# sourceMappingURL=CNN.css.map */
