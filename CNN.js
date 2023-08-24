@@ -17,8 +17,8 @@ $("document").ready(function(){
         // if (e.target.screen.width){
 
         // }
-        while (e.target.screen.width) {
-            $("nav").children().first().last().prev().css("display", "none")
-        }
+        // while (e.target.screen.width) {
+        //     $("nav").children().first().last().prev().css("display", "none")
+        // }
     }
 })
