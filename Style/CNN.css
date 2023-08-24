@@ -708,4 +708,8 @@ footer article:last-child > p {
   main #news7 article ul li img {
     height: 100px;
   }
+  footer article div img {
+    height: 350px;
+    width: 600px;
+  }
 }/*# sourceMappingURL=CNN.css.map */
