@@ -691,7 +691,7 @@ footer article:last-child > p {
   padding-top: 2rem;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1350px) {
   nav,
   main {
     padding: 0 2em;

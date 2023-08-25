@@ -281,7 +281,7 @@ footer article:last-child {
 	}
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1350px) {
 	nav,
 	main {
 		padding: 0 2em;
@@ -306,4 +306,7 @@ footer article:last-child {
 		height: 350px;
 		width: 600px;
 	}
+}
+
+@media (max-width: 1000px) {
 }
