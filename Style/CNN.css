@@ -712,4 +712,47 @@ footer article:last-child > p {
     height: 350px;
     width: 600px;
   }
+}
+@media (max-width: 1000px) {
+  main #news1,
+  main #news2,
+  main #news3,
+  main #news4,
+  main #news5,
+  main #news6 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main #news1 article,
+  main #news2 article,
+  main #news3 article,
+  main #news4 article,
+  main #news5 article,
+  main #news6 article {
+    width: 100%;
+  }
+  main #news1 article img,
+  main #news2 article img,
+  main #news3 article img,
+  main #news4 article img,
+  main #news5 article img,
+  main #news6 article img {
+    height: 350px;
+    width: 100%;
+  }
+  main #news1 article:first-child,
+  main #news2 article:first-child,
+  main #news3 article:first-child,
+  main #news4 article:first-child,
+  main #news5 article:first-child,
+  main #news6 article:first-child {
+    grid-column: span 1;
+  }
+  main #news1 article:nth-child(2),
+  main #news2 article:nth-child(2),
+  main #news3 article:nth-child(2),
+  main #news4 article:nth-child(2),
+  main #news5 article:nth-child(2),
+  main #news6 article:nth-child(2) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }/*# sourceMappingURL=CNN.css.map */

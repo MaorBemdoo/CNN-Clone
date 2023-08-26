@@ -309,4 +309,28 @@ footer article:last-child {
 }
 
 @media (max-width: 1000px) {
+	main #news1,
+	main #news2,
+	main #news3,
+	main #news4,
+	main #news5,
+	main #news6 {
+		grid-template-columns: repeat(1, 1fr);
+		& article {
+			& img {
+				height: 350px;
+				width: 100%;
+			}
+			width: 100%;
+			&:first-child {
+				grid-column: span 1;
+			}
+			&:nth-child(2) {
+				grid-template-columns: repeat(1, 1fr);
+			}
+		}
+	}
+	// .SArticle{
+	// 	width: 100%;
+	// }
 }
