@@ -317,11 +317,11 @@ footer article:last-child {
 	main #news6 {
 		grid-template-columns: repeat(1, 1fr);
 		& article {
+			width: 100%;
 			& img {
 				height: 350px;
 				width: 100%;
 			}
-			width: 100%;
 			&:first-child {
 				grid-column: span 1;
 			}
