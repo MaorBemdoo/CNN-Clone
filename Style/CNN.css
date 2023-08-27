@@ -747,12 +747,4 @@ footer article:last-child > p {
   main #news6 article:first-child {
     grid-column: span 1;
   }
-  main #news1 article:nth-child(2),
-  main #news2 article:nth-child(2),
-  main #news3 article:nth-child(2),
-  main #news4 article:nth-child(2),
-  main #news5 article:nth-child(2),
-  main #news6 article:nth-child(2) {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }/*# sourceMappingURL=CNN.css.map */

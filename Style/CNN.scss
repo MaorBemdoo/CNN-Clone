@@ -325,9 +325,6 @@ footer article:last-child {
 			&:first-child {
 				grid-column: span 1;
 			}
-			&:nth-child(2) {
-				grid-template-columns: repeat(1, 1fr);
-			}
 		}
 	}
 	// .SArticle{
