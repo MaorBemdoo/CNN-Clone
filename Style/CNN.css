@@ -760,7 +760,6 @@ footer article:last-child > p {
   main #news6 article:nth-child(2),
   main #news6 article:nth-child(3),
   main #news6 article:last-child {
-    margin-top: 0;
     grid-column: span 1;
   }
 }/*# sourceMappingURL=CNN.css.map */
