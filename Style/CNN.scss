@@ -322,7 +322,11 @@ footer article:last-child {
 				height: 350px;
 				width: 100%;
 			}
-			&:first-child {
+			&:first-child,
+			&:nth-child(2),
+			&:nth-child(3),
+			&:last-child{
+				mar
 				grid-column: span 1;
 			}
 		}
