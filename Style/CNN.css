@@ -714,6 +714,15 @@ footer article:last-child > p {
   }
 }
 @media (max-width: 1000px) {
+  nav div:first-child {
+    justify-content: left;
+  }
+  nav div:first-child > a:nth-child(n+3) {
+    display: none;
+  }
+  nav div:last-child > i {
+    display: none;
+  }
   main #news1,
   main #news2,
   main #news3,
