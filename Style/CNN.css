@@ -797,4 +797,27 @@ footer article:last-child > p {
   footer article:nth-child(2) div:last-child {
     grid-column: span 1;
   }
+  footer article:nth-child(3) {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+  }
+  footer article:nth-child(3) form {
+    grid-column: span 1;
+  }
+  footer article:nth-child(3) div:not(:nth-child(2)) {
+    display: none;
+  }
+  footer article:nth-child(3) div:nth-child(2) {
+    display: block;
+    margin: 0 auto;
+    padding-top: 2em;
+  }
+  footer article:nth-child(3) div:nth-child(2) img {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
+  footer article:nth-child(3) div:nth-child(2) h3 {
+    text-align: center;
+  }
 }/*# sourceMappingURL=CNN.css.map */
