@@ -354,6 +354,10 @@ footer article:last-child {
 			}
 		}
 	}
+
+	section > div{
+		transform: translateX(0) !important;
+	}
 	// .SArticle{
 	// 	width: 100%;
 	// }

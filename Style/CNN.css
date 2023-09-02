@@ -783,4 +783,7 @@ footer article:last-child > p {
     height: 50px !important;
     width: 80px !important;
   }
+  section > div {
+    transform: translateX(0) !important;
+  }
 }/*# sourceMappingURL=CNN.css.map */
