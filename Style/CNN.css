@@ -771,4 +771,8 @@ footer article:last-child > p {
   main #news6 article:last-child {
     grid-column: span 1;
   }
+  .SArticle ul li img {
+    height: 50px !important;
+    width: 80px !important;
+  }
 }/*# sourceMappingURL=CNN.css.map */

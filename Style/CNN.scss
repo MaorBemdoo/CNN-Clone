@@ -343,14 +343,14 @@ footer article:last-child {
 			}
 		}
 	}
-	// .SArticle{
-	// 	& ul li{
-	// 		& img{
-	// 			height: 100px;
-	// 			width: 200px;
-	// 		}
-	// 	}
-	// }
+	.SArticle{
+		& ul li{
+			& img{
+				height: 50px !important;
+				width: 80px !important;
+			}
+		}
+	}
 	// .SArticle{
 	// 	width: 100%;
 	// }
