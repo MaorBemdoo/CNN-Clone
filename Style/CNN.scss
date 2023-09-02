@@ -356,4 +356,14 @@ footer article:last-child {
 	main #news7 article{
 		flex-direction: column;
 	}
+	footer article:nth-child(2) {
+		grid-template-columns: repeat(1, 1fr);
+		& > *{
+			display: grid;
+			place-items: center;
+		}
+		& div:last-child{
+			grid-column: span 1;
+		}
+	}
 }
