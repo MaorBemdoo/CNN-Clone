@@ -746,6 +746,7 @@ footer article:last-child > p {
   main #news5 article,
   main #news6 article {
     width: 100%;
+    grid-column: span 1 !important;
   }
   main #news1 article img,
   main #news2 article img,
@@ -755,29 +756,6 @@ footer article:last-child > p {
   main #news6 article img {
     height: 350px;
     width: 100%;
-  }
-  main #news1 article:first-child, main #news1 article:nth-child(2), main #news1 article:nth-child(3), main #news1 article:last-child,
-  main #news2 article:first-child,
-  main #news2 article:nth-child(2),
-  main #news2 article:nth-child(3),
-  main #news2 article:last-child,
-  main #news3 article:first-child,
-  main #news3 article:nth-child(2),
-  main #news3 article:nth-child(3),
-  main #news3 article:last-child,
-  main #news4 article:first-child,
-  main #news4 article:nth-child(2),
-  main #news4 article:nth-child(3),
-  main #news4 article:last-child,
-  main #news5 article:first-child,
-  main #news5 article:nth-child(2),
-  main #news5 article:nth-child(3),
-  main #news5 article:last-child,
-  main #news6 article:first-child,
-  main #news6 article:nth-child(2),
-  main #news6 article:nth-child(3),
-  main #news6 article:last-child {
-    grid-column: span 1;
   }
   .SArticle ul li img {
     height: 50px !important;

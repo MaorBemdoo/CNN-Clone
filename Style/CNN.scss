@@ -334,15 +334,10 @@ footer article:last-child {
 		}
 		& article {
 			width: 100%;
+			grid-column: span 1 !important;
 			& img {
 				height: 350px;
 				width: 100%;
-			}
-			&:first-child,
-			&:nth-child(2),
-			&:nth-child(3),
-			&:last-child{
-				grid-column: span 1;
 			}
 		}
 	}
