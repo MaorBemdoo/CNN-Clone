@@ -191,6 +191,9 @@ footer article:nth-child(3) form {
 footer article:nth-child(3) div {
 	display: flex;
 	flex-direction: column;
+	&:nth-child(2){
+		display: none;
+	}
 	& a {
 		width: fit-content;
 		font-size: 0.9rem;

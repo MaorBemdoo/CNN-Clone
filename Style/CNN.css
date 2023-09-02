@@ -603,6 +603,9 @@ footer article:nth-child(3) div {
   display: flex;
   flex-direction: column;
 }
+footer article:nth-child(3) div:nth-child(2) {
+  display: none;
+}
 footer article:nth-child(3) div a {
   width: -moz-fit-content;
   width: fit-content;
