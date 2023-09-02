@@ -133,6 +133,7 @@ footer article:nth-child(2) {
 }
 
 footer article:nth-child(2) ul {
+	padding: 0;
 	& li {
 		list-style: none;
 		padding: 1rem 0;
@@ -309,15 +310,25 @@ footer article:last-child {
 }
 
 @media (max-width: 1000px) {
-	nav div{
-		&:first-child{
+	nav,
+	main {
+		padding: 0 1em;
+	}
+	footer > h1 {
+		padding-left: 1em;
+	}
+	footer article {
+		padding: 5em 1em;
+	}
+	nav div {
+		&:first-child {
 			justify-content: left;
-			& > a:nth-child(n + 3){
+			& > a:nth-child(n + 3) {
 				display: none;
 			}
 		}
-		&:last-child{
-			& > i{
+		&:last-child {
+			& > i {
 				display: none;
 			}
 		}
@@ -329,7 +340,7 @@ footer article:last-child {
 	main #news5,
 	main #news6 {
 		grid-template-columns: repeat(1, 1fr);
-		& > h1{
+		& > h1 {
 			grid-column: span 1;
 		}
 		& article {
@@ -341,28 +352,33 @@ footer article:last-child {
 			}
 		}
 	}
-	.SArticle{
-		& ul li{
-			& img{
+	.SArticle {
+		& ul li {
+			& img {
 				height: 50px !important;
 				width: 80px !important;
 			}
 		}
 	}
 
-	section > div{
+	section > div {
 		transform: translateX(0) !important;
 	}
-	main #news7 article{
+	main #news7 article {
 		flex-direction: column;
 	}
 	footer article:nth-child(2) {
 		grid-template-columns: repeat(1, 1fr);
-		& > *{
-			display: grid;
-			place-items: center;
+		place-items: center;
+		& img {
+			height: 300px;
+			width: 100%;
 		}
-		& div:last-child{
+		& ul {
+			width: 100%;
+			// margin: 0 auto;
+		}
+		& div:last-child {
 			grid-column: span 1;
 		}
 	}

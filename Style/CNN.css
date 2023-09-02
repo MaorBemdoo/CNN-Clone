@@ -543,6 +543,9 @@ footer article:nth-child(2) {
   grid-template-columns: repeat(2, 1fr);
 }
 
+footer article:nth-child(2) ul {
+  padding: 0;
+}
 footer article:nth-child(2) ul li {
   list-style: none;
   padding: 1rem 0;
@@ -714,6 +717,16 @@ footer article:last-child > p {
   }
 }
 @media (max-width: 1000px) {
+  nav,
+  main {
+    padding: 0 1em;
+  }
+  footer > h1 {
+    padding-left: 1em;
+  }
+  footer article {
+    padding: 5em 1em;
+  }
   nav div:first-child {
     justify-content: left;
   }
@@ -769,10 +782,14 @@ footer article:last-child > p {
   }
   footer article:nth-child(2) {
     grid-template-columns: repeat(1, 1fr);
-  }
-  footer article:nth-child(2) > * {
-    display: grid;
     place-items: center;
+  }
+  footer article:nth-child(2) img {
+    height: 300px;
+    width: 100%;
+  }
+  footer article:nth-child(2) ul {
+    width: 100%;
   }
   footer article:nth-child(2) div:last-child {
     grid-column: span 1;
