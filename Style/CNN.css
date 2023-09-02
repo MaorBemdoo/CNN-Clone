@@ -731,6 +731,14 @@ footer article:last-child > p {
   main #news6 {
     grid-template-columns: repeat(1, 1fr);
   }
+  main #news1 > h1,
+  main #news2 > h1,
+  main #news3 > h1,
+  main #news4 > h1,
+  main #news5 > h1,
+  main #news6 > h1 {
+    grid-column: span 1;
+  }
   main #news1 article,
   main #news2 article,
   main #news3 article,
