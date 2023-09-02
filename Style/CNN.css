@@ -764,4 +764,7 @@ footer article:last-child > p {
   section > div {
     transform: translateX(0) !important;
   }
+  main #news7 article {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=CNN.css.map */
