@@ -13,6 +13,11 @@ $("document").ready(function () {
 			$("#Hdiv").css("z-index", "-100");
 		}
 	};
+
+	if(window.innerWidth <= 1000){
+		$("footer article:nth-child(3) form button").html(`<i class="bi bi-search" style="font-size: 1.2rem;"></i>`)
+	}
+
 	const navDivFirstChild = document.querySelectorAll("nav div:first-child");
 	window.onresize = (e) => {
 		console.log(e.target.screen.width);
