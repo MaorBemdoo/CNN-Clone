@@ -622,7 +622,7 @@ footer article:nth-child(3) div h3:hover {
   text-decoration: underline;
 }
 
-footer article:nth-child(4) {
+footer article:nth-child(6) {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -630,44 +630,44 @@ footer article:nth-child(4) {
   border-top: 0.3px solid grey;
 }
 
-footer article:nth-child(4) div:first-child {
+footer article:nth-child(6) div:first-child {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-footer article:nth-child(4) div:first-child img {
+footer article:nth-child(6) div:first-child img {
   cursor: pointer;
   height: 50px;
   width: 50px;
 }
-footer article:nth-child(4) div:first-child a {
+footer article:nth-child(6) div:first-child a {
   font-weight: 600;
   font-size: 1.3rem;
 }
 
-footer article:nth-child(4) div:last-child {
+footer article:nth-child(6) div:last-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
 }
-footer article:nth-child(4) div:last-child > *:hover {
+footer article:nth-child(6) div:last-child > *:hover {
   border-bottom: 0;
 }
-footer article:nth-child(4) div:last-child p:nth-child(3) {
+footer article:nth-child(6) div:last-child p:nth-child(3) {
   color: silver;
   cursor: pointer;
 }
-footer article:nth-child(4) div:last-child p:nth-child(4) {
+footer article:nth-child(6) div:last-child p:nth-child(4) {
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
 }
-footer article:nth-child(4) div:last-child i {
+footer article:nth-child(6) div:last-child i {
   font-size: 1.5rem;
   cursor: pointer;
 }
-footer article:nth-child(4) div:last-child button {
+footer article:nth-child(6) div:last-child button {
   color: white;
   background-color: black;
   border: white 2px solid;
@@ -676,7 +676,7 @@ footer article:nth-child(4) div:last-child button {
   padding: 0.5em;
   cursor: pointer;
 }
-footer article:nth-child(4) div:last-child button:hover {
+footer article:nth-child(6) div:last-child button:hover {
   background-color: rgb(161, 161, 161);
 }
 
