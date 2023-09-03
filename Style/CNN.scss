@@ -211,12 +211,13 @@ footer article:nth-child(3) div {
 }
 
 footer article:nth-child(4),
-footer article:nth-child(5){
+footer article:nth-child(5) {
 	display: none;
+	padding: 2em 0;
 	border-top: 0.3px solid grey;
 	place-items: center;
 	gap: 1.5rem;
-	& a{
+	& a {
 		font-size: 1.2rem;
 	}
 }
@@ -420,7 +421,7 @@ footer article:last-child {
 		}
 	}
 	footer article:nth-child(4),
-	footer article:nth-child(5){
+	footer article:nth-child(5) {
 		display: grid;
 	}
 }
