@@ -837,4 +837,19 @@ footer article:last-child > p {
   footer article:nth-child(5) {
     display: grid;
   }
+  footer article:nth-child(6) {
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer article:nth-child(6) div:last-child {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  footer article:nth-child(6) div:last-child > *:nth-child(4) {
+    grid-column: span 3;
+  }
+  footer article:nth-child(6) div:last-child > *:nth-last-child(n+6), footer article:nth-child(6) div:last-child > *:last-child {
+    display: none !important;
+  }
 }/*# sourceMappingURL=CNN.css.map */

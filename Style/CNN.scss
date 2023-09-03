@@ -424,4 +424,20 @@ footer article:last-child {
 	footer article:nth-child(5) {
 		display: grid;
 	}
+	footer article:nth-child(6) {
+		flex-direction: column;
+		justify-content: center;
+		& div:last-child {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 0;
+			& > *:nth-child(4){
+				grid-column: span 3;
+			}
+			& > *:nth-last-child(n + 6),
+			& > *:last-child {
+				display: none !important;
+			}
+		}
+	}
 }
