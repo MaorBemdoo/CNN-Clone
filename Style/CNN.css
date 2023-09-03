@@ -622,6 +622,12 @@ footer article:nth-child(3) div h3:hover {
   text-decoration: underline;
 }
 
+footer article:nth-child(4),
+footer article:nth-child(5) {
+  display: none;
+  border-top: 0.3px solid grey;
+}
+
 footer article:nth-child(6) {
   display: flex;
   justify-content: space-between;
@@ -819,5 +825,9 @@ footer article:last-child > p {
   }
   footer article:nth-child(3) div:nth-child(2) h3 {
     text-align: center;
+  }
+  footer article:nth-child(4),
+  footer article:nth-child(5) {
+    display: block;
   }
 }/*# sourceMappingURL=CNN.css.map */

@@ -210,6 +210,12 @@ footer article:nth-child(3) div {
 	}
 }
 
+footer article:nth-child(4),
+footer article:nth-child(5){
+	display: none;
+	border-top: 0.3px solid grey;
+}
+
 footer article:nth-child(6) {
 	display: flex;
 	justify-content: space-between;
@@ -407,5 +413,9 @@ footer article:last-child {
 				text-align: center;
 			}
 		}
+	}
+	footer article:nth-child(4),
+	footer article:nth-child(5){
+		display: block;
 	}
 }
