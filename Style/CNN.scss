@@ -214,6 +214,11 @@ footer article:nth-child(4),
 footer article:nth-child(5){
 	display: none;
 	border-top: 0.3px solid grey;
+	place-items: center;
+	gap: 1.5rem;
+	& a{
+		font-size: 1.2rem;
+	}
 }
 
 footer article:nth-child(6) {
@@ -416,6 +421,6 @@ footer article:last-child {
 	}
 	footer article:nth-child(4),
 	footer article:nth-child(5){
-		display: block;
+		display: grid;
 	}
 }
