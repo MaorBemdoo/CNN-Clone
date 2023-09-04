@@ -853,4 +853,7 @@ footer article:last-child > p {
   footer article:nth-child(6) div:last-child > *:nth-last-child(n+6), footer article:nth-child(6) div:last-child > *:last-child {
     display: none !important;
   }
+  footer article:last-child {
+    text-align: center;
+  }
 }/*# sourceMappingURL=CNN.css.map */
