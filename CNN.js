@@ -19,13 +19,13 @@ $("document").ready(function () {
 	}
 
 	const navDivFirstChild = document.querySelectorAll("nav div:first-child");
-	window.onresize = (e) => {
-		console.log(e.target.screen.width);
-		if (e.target.screen.width <= 1153) {
-			navDivFirstChild.forEach((child) => {
-				child.lastElementChild.style.display = "block";
-				child.lastElementChild.previousElementSibling.style.display = "none";
-			});
-		}
-	};
+	// window.onresize = (e) => {
+	// 	console.log(e.target.screen.width);
+	// 	if (e.target.screen.width <= 1153) {
+	// 		navDivFirstChild.forEach((child) => {
+	// 			child.lastElementChild.style.display = "block";
+	// 			child.lastElementChild.previousElementSibling.style.display = "none";
+	// 		});
+	// 	}
+	// };
 });
