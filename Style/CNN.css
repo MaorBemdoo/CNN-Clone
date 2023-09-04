@@ -842,6 +842,7 @@ footer article:last-child > p {
     justify-content: center;
   }
   footer article:nth-child(6) div:last-child {
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0;

@@ -428,10 +428,11 @@ footer article:last-child {
 		flex-direction: column;
 		justify-content: center;
 		& div:last-child {
+			text-align: center;
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			gap: 0;
-			& > *:nth-child(4){
+			& > *:nth-child(4) {
 				grid-column: span 3;
 			}
 			& > *:nth-last-child(n + 6),
