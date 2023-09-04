@@ -37,6 +37,10 @@ The CNN Clone is a web application that replicates the look and feel of the Cabl
 
 **[Live Demo](https://bemdoom-cnn-clone.vercel.app)**
 
+## 👨‍💻Author
+
+**[Bemdoo Maor](https://github.com/MaorBemdoo)**
+
 ## LICENSE
 
 This repository is licensed under [MIT](LICENSE) License
