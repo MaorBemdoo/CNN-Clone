@@ -29,6 +29,9 @@ $("document").ready(function () {
 	if(window.innerWidth <= 1047){
 		navDivFirstChild.children().last().prev().prev().prev().css("display", "none")
 	}
+	if(window.innerWidth <= 1000){
+			navDivFirstChild.children().last().css("display", "none")
+		}
 	window.onresize = (e) => {
 		// console.log(e.target.screen.width);
 		if (e.target.screen.width <= 1207) {
@@ -40,6 +43,9 @@ $("document").ready(function () {
 		}
 		if(e.target.screen.width <= 1047){
 			navDivFirstChild.children().last().prev().prev().prev().css("display", "none")
+		}
+		if(e.target.screen.width <= 1000){
+			navDivFirstChild.children().last().css("display", "none")
 		}
 	};
 });
