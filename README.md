@@ -13,3 +13,9 @@ The CNN Clone is a web application that replicates the look and feel of the Cabl
 - HTML5
 - CSS3 (including Flexbox and media queries)
 - JavaScript (for interactive features)
+
+## Challenges Encountered and Known Challenges
+
+- The design was hard to replicate
+- The responsive design isn't perfect
+- The news are not up to date and they don't use an news api to keep them updated
