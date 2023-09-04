@@ -19,3 +19,12 @@ The CNN Clone is a web application that replicates the look and feel of the Cabl
 - The design was hard to replicate
 - The responsive design isn't perfect
 - The news are not up to date and they don't use an news api to keep them updated
+
+## How to install and Run the project
+
+- Fork the repository and clone to your local machine
+```bash
+  git clone <repo>
+```
+- Redirect to the cloned project folder
+- On your browser locate the index.html file or use live server
