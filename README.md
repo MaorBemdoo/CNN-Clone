@@ -28,3 +28,11 @@ The CNN Clone is a web application that replicates the look and feel of the Cabl
 ```
 - Redirect to the cloned project folder
 - On your browser locate the index.html file or use live server
+
+## Demo
+
+![Desktop Screenshot](Img/laptopScreenshot.png)<br>
+
+![Mobile Screenshot](Img/mobileScreenshot.png)
+
+**[Live Demo](https://bemdoom-cnn-clone.vercel.app)**
