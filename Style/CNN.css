@@ -541,6 +541,7 @@ footer > article {
 footer article:nth-child(2) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 
 footer article:nth-child(2) ul {
@@ -798,7 +799,6 @@ footer article:last-child > p {
   }
   footer article:nth-child(2) {
     grid-template-columns: repeat(1, 1fr);
-    place-items: center;
   }
   footer article:nth-child(2) img {
     height: 400px;
@@ -809,6 +809,7 @@ footer article:last-child > p {
   }
   footer article:nth-child(2) div:last-child {
     grid-column: span 1;
+    width: 100%;
   }
   footer article:nth-child(3) {
     grid-template-columns: repeat(1, 1fr);
