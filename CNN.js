@@ -33,7 +33,6 @@ $("document").ready(function () {
 			navDivFirstChild.children().last().css("display", "none")
 		}
 	window.onresize = (e) => {
-		// console.log(e.target.screen.width);
 		if (e.target.screen.width <= 1207) {
 			navDivFirstChild.children().last().css("display", "block")
 			navDivFirstChild.children().last().prev().css("display", "none")
